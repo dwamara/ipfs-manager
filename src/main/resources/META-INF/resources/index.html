@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Quarkus PDF Extract</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<h1>Quarkus IPFS Inserter</h1>
+<p>
+    Select a file to add in IPFS.
+</p>
+<form class="form-horizontal"  enctype="multipart/form-data" method="post" action="/documents/upload">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend>Document uploader</legend>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="clientId">University</label>
+            <div class="col-md-4">
+                <select id="clientId" name="clientId" class="form-control">
+                    <option value="1">UNIKIN</option>
+                    <option value="2">UNIBAZ</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="documentType">Document type</label>
+            <div class="col-md-4">
+                <select id="documentType" name="documentType" class="form-control">
+                    <option value="diploma">Diploma</option>
+                    <option value="certificate">Certificate</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="uploader">University Employee</label>
+            <div class="col-md-4">
+                <select id="uploader" name="uploader" class="form-control">
+                    <option value="emp1">Secretaire 1</option>
+                    <option value="emp2">Secretaire 2</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="document">Diploma / Certificate</label>
+            <div class="col-md-4">
+                <input id="document" name="document" class="input-file" type="file">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="upload"></label>
+            <div class="col-md-8">
+                <button id="upload" name="upload" class="btn btn-success" type="submit">Upload</button>
+                <button id="cancel" name="cancel" class="btn btn-warning" type="reset">Cancel</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
+</body>
+</html>
